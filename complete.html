@@ -1,12 +1,12 @@
 <body>
 <script>
  if (window.parent) {
-	if (/PayTrace3rdPartyCookieTest=yes/.test(document.cookie)) {
+	if (/thirdparty=yes/.test(document.cookie)) {
 		window.parent.postMessage('MM:3PCsupported', '*');
 	} else {
 		window.parent.postMessage('MM:3PCunsupported', '*');
 	}
-	document.cookie = 'name=PayTrace3rdPartyCookieTest; thirdparty=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+	document.cookie = 'name=PaytraceTest; thirdparty=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
  }
 </script>
 </body>
